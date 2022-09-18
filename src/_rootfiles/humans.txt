@@ -1,0 +1,16 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Paul Brandon -- Lead Backend Developer -- @websitesos
+    Dean Morgan -- Lead Frontend Developer -- @websitesos
+
+# THANKS
+
+    Harry Roberts -- Performance Optimisation Specialist -- @csswizardry
+
+# TECHNOLOGY COLOPHON
+
+    CSS3, HTML5
+    11ty, Modernizr, Normalize.css, main.css, Parcel

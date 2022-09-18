@@ -1,0 +1,61 @@
+{
+  "name": "websitesos.co.uk",
+  "version": "1.0.0",
+  "description": "A personal blog site built with eleventy and hosted on github pages.",
+  "scripts": {
+    "clean:dist": "rm -rf dist/",
+    "clean:packages": "rm -rf node_modules/",
+    "clean:assets": "rm -rf src/assets/build/",
+    "build": "npm-run-all clean:dist clean:assets build:js build:scss postcss build:site",
+    "watch": "eleventy --watch",
+    "serve": "eleventy --serve",
+    "build:site": "eleventy",
+    "build:js": "rollup -c rollup.config.js",
+    "watch:js": "rollup -c rollup.config.js -w",
+    "watch:scss": "sass --load-path=node_modules/@itstasty/tasty-css --load-path=node_modules/sass-mq src/assets/css:src/assets/build/css --watch",
+    "build:scss": "sass --load-path=node_modules/@itstasty/tasty-css --load-path=node_modules/sass-mq src/assets/css:src/assets/build/css",
+    "lint:scss": "./node_modules/.bin/stylelint \"src/assets/css/**/*.scss\"",
+    "postcss": "postcss src/assets/build/css/*.css --replace --use autoprefixer postcss-minify",
+    "start": "npm-run-all clean:dist clean:assets build:js build:scss --parallel watch:js watch:scss serve",
+    "test": "mocha test/test*.js",
+    "debug": "DEBUG=* eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/websitesos/websitesos.co.uk.git"
+  },
+  "author": {
+    "name": "Dean James Morgan",
+    "email": "hello@websitesos.co.uk",
+    "url": "https://websitesos.co.uk/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/websitesos/websitesos.co.uk/issues"
+  },
+  "homepage": "https://github.com/websitesos/websitesos.co.uk#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy-navigation": "^0.3.0",
+    "@11ty/eleventy-plugin-rss": "^1.1.0",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@itstasty/tasty-css": "0.0.4",
+    "autoprefixer": "^10.4.7",
+    "expect.js": "^0.3.0",
+    "jsdom": "^19.0.0",
+    "luxon": "^2.4.0",
+    "markdown-it": "^13.0.0",
+    "markdown-it-anchor": "^8.6.4",
+    "mocha": "^10.0.0",
+    "npm-run-all": "^4.1.0",
+    "postcss": "^8.4.14",
+    "postcss-cli": "^9.1.0",
+    "postcss-minify": "^1.1.0",
+    "rollup": "^2.74.1",
+    "rollup-plugin-terser": "^7.0.0",
+    "sass": "^1.52.1",
+    "stylelint": "^14.8.3",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-scss": "^4.2.0"
+  }
+}

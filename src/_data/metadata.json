@@ -1,0 +1,21 @@
+{
+  "title": "Website SOS",
+  "url": "https://websitesos.co.uk/",
+  "language": "en",
+  "description": "A site built with eleventy and hosted on github pages.",
+  "feed": {
+    "subtitle": "A site built with eleventy and hosted on github pages.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://websitesos.co.uk/"
+  },
+  "jsonfeed": {
+    "path": "/feed/feed.json",
+    "url": "https://websitesos.co.uk/feed/feed.json"
+  },
+  "author": {
+    "name": "Dean James Morgan",
+    "email": "hello@websitesos.co.uk",
+    "url": "https://websitesos.co.uk/about/"
+  }
+}

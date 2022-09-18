@@ -1,0 +1,125 @@
+body {
+    font-family: system-ui;
+  }
+  
+  a[href]:not([class]) {
+    text-decoration: underline;
+    text-decoration-color: #1b68d562;
+    text-decoration-thickness: 3px;
+  
+    &:hover {
+      text-decoration-color: #1b68d5;
+    }
+  }
+
+  hr {
+    display: block;
+    border-bottom: 1px dashed #00000033;
+    margin-bottom: 1rem;
+  }
+
+  pre {
+    padding: 0.5rem;
+    background-color: #00000011;
+    border-bottom: 0.1rem dashed #00000070;
+    border-radius: 0.3rem;
+    white-space: pre-wrap;
+    font-family: monospace;
+
+    code {
+      padding: unset;
+      background-color: unset;
+      border-bottom: unset;
+      border-radius: unset;
+    }
+  }
+  
+  code {
+    padding: 0.25rem 0.5rem;
+    background-color: #00000011;
+    border-bottom: 0.1rem dashed #00000070;
+    border-radius: 0.3rem;
+    font-family: monospace;
+  }
+
+
+.site-title {
+  font-size: 2.5rem;
+  font-weight: 900;
+}
+
+.nav {
+  margin-bottom: 1rem;
+
+  &-item {
+    display: inline-block;
+    margin-right: 1rem;
+  }
+}
+
+.post-date {
+  margin-bottom: 1rem;
+}
+
+.post-tags {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tag {
+    display: flex;
+    align-items: center;
+    padding: 0.25rem 0.5rem;
+    background-color: #fff;
+    border: 1px solid #1b68d562;
+    border-radius: 0.25rem;
+    font-size: 0.75rem;
+    font-weight: 400;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    &:hover {
+        border-color: #1b68d5;
+    }
+
+    &::before {
+      display: inline-block;
+      width: 1rem;
+      height: 1rem;
+      margin-right: 0.5rem;
+      background-size: contain;
+    }
+    
+    &--11ty:before {
+      content: "";
+      background-image: url(/assets/img/svg/icons/icons8-html-5-50.svg);
+    }
+
+    &--github:before {
+      content: "";
+      background-image: url(/assets/img/svg/icons/icons8-github-50.svg);
+    }
+
+    &--scss:before {
+      content: "";
+      background-image: url(/assets/img/svg/icons/icons8-sass-50.svg);
+    }
+
+    &--npm:before {
+      content: "";
+      background-image: url(/assets/img/svg/icons/icons8-npm-50.svg);
+    }
+
+    &--webperf:before {
+      content: "";
+      background-image: url(/assets/img/svg/icons/icons8-chrome-50.svg);
+    }
+
+    &--npm:before {
+      content: "";
+      background-image: url(/assets/img/svg/icons/icons8-npm-50.svg);
+    }
+}
