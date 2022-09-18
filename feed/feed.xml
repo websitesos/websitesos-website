@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Website SOS</title>
+	<subtitle>A site built with eleventy and hosted on github pages.</subtitle>
+	
+	<link href="https://websitesos.co.uk/feed/feed.xml" rel="self"/>
+	<link href="https://websitesos.co.uk/"/>
+	<updated>2022-09-16T00:00:00Z</updated>
+	<id>https://websitesos.co.uk/</id>
+	<author>
+		<name>Dean James Morgan</name>
+		<email>hello@websitesos.co.uk</email>
+	</author>
+	
+	<entry>
+		<title>Welcome to Website SOS</title>
+		<link href="https://websitesos.co.uk/posts/welcome/"/>
+		<updated>2022-09-16T00:00:00Z</updated>
+		<id>https://websitesos.co.uk/posts/welcome/</id>
+		<content type="html"></content>
+	</entry>
+</feed>
